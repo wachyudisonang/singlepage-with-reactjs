@@ -5,6 +5,7 @@ import './Resume/resume.css';
 import logo from './logo.svg';
 import Main from './Resume/Main'
 import Home from './Resume/Home'
+import Footer from './Resume/Footer'
 import Portfolio from './Resume/Portfolio'
 import About from './Resume/About'
 import Contact from './Resume/Contact'
