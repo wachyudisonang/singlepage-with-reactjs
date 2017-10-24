@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('icomoon.eot?f0bgf0');
-  src:  url('icomoon.eot?f0bgf0#iefix') format('embedded-opentype'),
-    url('icomoon.ttf?f0bgf0') format('truetype'),
-    url('icomoon.woff?f0bgf0') format('woff'),
-    url('icomoon.svg?f0bgf0#icomoon') format('svg');
+  src:  url('icomoon.eot?s0gple');
+  src:  url('icomoon.eot?s0gple#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?s0gple') format('truetype'),
+    url('icomoon.woff?s0gple') format('woff'),
+    url('icomoon.svg?s0gple#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,31 +24,30 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-forward:before {
-  content: "\e154";
+.icon-embed2:before {
+  content: "\ea80";
 }
-.icon-subdirectory_arrow_left:before {
-  content: "\e5d9";
+.icon-google-plus3:before {
+  content: "\ea8d";
 }
-.icon-trash-can:before {
-  content: "\e900";
+.icon-whatsapp:before {
+  content: "\ea93";
 }
-.icon-document:before {
-  content: "\e901";
+.icon-twitter:before {
+  content: "\ea96";
 }
-.icon-inbox-document-text:before {
-  content: "\e902";
+.icon-github:before {
+  content: "\eab0";
 }
-.icon-folder-add:before {
-  content: "\e905";
+.icon-npm:before {
+  content: "\eab1";
 }
-.icon-undo2:before {
-  content: "\e967";
+.icon-linkedin:before {
+  content: "\eac9";
 }
-.icon-user:before {
-  content: "\e971";
+.icon-html-five:before {
+  content: "\eae4";
 }
-.icon-blocked:before {
-  content: "\ea0e";
+.icon-git:before {
+  content: "\eae7";
 }
-

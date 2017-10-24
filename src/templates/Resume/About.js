@@ -12,7 +12,7 @@ const About = () => (
 			<hr class="star-light" />
 			<div class="row">
 				<div class="col-lg-12 ml-auto">
-					{basics.summary.map(paragraph)}
+					{basics.summary.map(par => <p>{par}</p> )}
 				</div>
 			</div>
 		</div>

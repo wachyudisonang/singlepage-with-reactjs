@@ -4,8 +4,8 @@ import SocialMedia from "../../components/socialMedia"
 
 const Footer = () => (
 	<footer>
-		<div className='row'>
-				<div className='twelve columns'>
+		<div className='container'>
+				<div className='socials'>
 						<SocialMedia profiles={basics.profiles}/>
 				</div>
 				<div id='go-top'>

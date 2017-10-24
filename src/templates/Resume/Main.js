@@ -11,7 +11,7 @@ import Contact from './Contact'
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
 const Main = () => (
-	<main>
+	<main id="content" className="bd-masthead" role="main">
 		<Switch>
 			<Route exact path='/' component={Home}/>
 			<Route path='/portfolio' component={Portfolio}/>

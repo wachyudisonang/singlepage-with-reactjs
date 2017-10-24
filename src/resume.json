@@ -20,39 +20,24 @@
         },
         "profiles": [
             {
-                "network": "Phone",
+                "network": "WhatsApp",
                 "username": "",
-                "url": "skype:+85251998799"
+                "url": "tel:+6285779040245"
             },
             {
                 "network": "Email",
-                "username": "mail@suddi.io",
-                "url": "mailto:mail@suddi.io"
+                "username": "hello@sonangsatriani.com",
+                "url": "mailto:hello@sonangsatriani.com"
             },
             {
                 "network": "LinkedIn",
                 "username": "suddi",
-                "url": "https://www.linkedin.com/in/suddi"
-            },
-            {
-                "network": "Quora",
-                "username": "Sudharshan Ravindran",
-                "url": "https://www.quora.com/profile/Sudharshan-Ravindran"
-            },
-            {
-                "network": "Stack Overflow",
-                "username": "suddi",
-                "url": "http://stackoverflow.com/users/2492324/suddi"
+                "url": "https://www.linkedin.com/in/wachyudisonang"
             },
             {
                 "network": "GitHub",
                 "username": "suddi",
-                "url": "https://github.com/suddi"
-            },
-            {
-                "network": "Docker",
-                "username": "suddi",
-                "url": "https://hub.docker.com/u/suddi/"
+                "url": "https://github.com/wachyudisonang"
             }
         ]
     },

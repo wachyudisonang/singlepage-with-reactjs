@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import './style.css';
 import './Resume/resume.css';
@@ -46,8 +47,8 @@ class Resume extends Component {
 	render() {
 		const { className, ...props } = this.props;
 		return (
-			<div>
-				<Navbar fixed="top" dark expand="lg" id="mainNav">
+			<div className={classnames('App', className)} {...props}>
+				<Navbar tag="header" fixed="top" expand="lg" dark id="mainNav">
 					<div class="container">
 						<Link to='/' class="navbar-brand">React Resume <img src={logo} className="App-logo" alt="logo" /></Link>
 						<NavbarToggler right onClick={this.toggle} />
@@ -61,6 +62,7 @@ class Resume extends Component {
 					</div>
 				</Navbar>
 				<Main />
+				<Footer />
 			</div>
 		);
 	}

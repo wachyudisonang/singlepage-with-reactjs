@@ -15,8 +15,18 @@ p.small {
 
 main {
     padding-top: 100px;
-  padding-bottom: 50px;
 }
+footer {
+    background: #000;
+}
+footer .navbar-nav {
+    justify-content: center;
+}
+footer .socials a {
+    font-size: 2rem;
+    color: #666;
+}
+
 a,
 a.active,
 a:active,
@@ -162,30 +172,30 @@ section.success {
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1.5em; } }
 
-header.masthead {
+#home {
   text-align: center;
   color: white;
   background: #18BC9C; }
-  header.masthead img {
+  #home img {
     display: block;
     margin: 0 auto 20px; }
-  header.masthead .intro-text .name {
+  #home .intro-text .name {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 2em;
     font-weight: 700;
     display: block;
     text-transform: uppercase; }
-  header.masthead .intro-text .skills {
+  #home .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300; }
 
 @media (min-width: 768px) {
-  header.masthead {
+  #home {
     padding-top: 100px;
     padding-bottom: 100px; }
-    header.masthead .intro-text .name {
+    #home .intro-text .name {
       font-size: 4.75em; }
-    header.masthead .intro-text .skills {
+    #home .intro-text .skills {
       font-size: 1.75em; } }
 
 #portfolio .portfolio-item {
