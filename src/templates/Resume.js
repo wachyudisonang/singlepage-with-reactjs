@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 import './Resume/resume.css';
 import logo from './logo.svg';
@@ -22,6 +23,8 @@ import {
 	Button
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
+import Icon from '../components/Icon';
+import '../resources/fonts/style.css';
 
 class Resume extends Component {
 	constructor(props) {
@@ -38,11 +41,12 @@ class Resume extends Component {
       collapsed: !this.state.collapsed
     });
   }
+
 	render() {
 		const { className, ...props } = this.props;
 		return (
 			<div>
-				<Navbar fixed="top" light expand id="mainNav">
+				<Navbar fixed="top" dark expand="lg" id="mainNav">
 					<div class="container">
 						<Link to='/' class="navbar-brand">React Resume <img src={logo} className="App-logo" alt="logo" /></Link>
 						<NavbarToggler right onClick={this.toggle} />

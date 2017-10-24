@@ -1,4 +1,9 @@
 import React from 'react'
+import {basics} from '../../resume.json'
+
+const paragraph = (content) => (
+	<p>{content}</p>
+)
 
 const About = () => (
 	<section class="success" id="about">
@@ -7,7 +12,7 @@ const About = () => (
 			<hr class="star-light" />
 			<div class="row">
 				<div class="col-lg-12 ml-auto">
-					<p>React Resume is developed in React.js with bootstrap html/css framework.</p>
+					{basics.summary.map(paragraph)}
 				</div>
 			</div>
 		</div>
