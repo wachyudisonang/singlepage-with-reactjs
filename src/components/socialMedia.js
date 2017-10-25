@@ -1,29 +1,34 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+
 function mapIcon(socialMedia) {
-    const media = socialMedia.replace(/ /g, '-');
-    switch (socialMedia) {
-        case 'email':
-            return (
-                <i className={'icon-envelope'}/>
-            );
-        default:
-            return (
-                <i className={`icon-${media}`}/>
-            );
-    }
+		const media = socialMedia.replace(/ /g, '-');
+		switch (socialMedia) {
+			case 'email':
+				return (
+						<i className={'icon-envelope'}/>
+				);
+			default:
+				return (
+						<i className={`icon-${media}`}/>
+				);
+		}
 }
 
-const SocialMedia = props => {
+const socialMedia = props => {
 	return (
 		<ul className="navbar-nav flex-row">
-			{props.profiles.map(function (profile, index) {
-				const icon = mapIcon(profile.network.toLowerCase());
+			{props.profiles
+				.filter(function (profile, index) {
+					return !profile.hide
+				})
+				.map(function (profile, index) {
+				const getIcon = mapIcon(profile.icon.toLowerCase());
 				return (
 					<li className="nav-item" key={index}>
-						<a href={profile.url} className="nav-link p-2">
-							 {icon}
+						<a href={profile.url} className="nav-link p-2" target="_blank">
+							 {getIcon}
 						</a>
 					</li>
 				);
@@ -32,4 +37,4 @@ const SocialMedia = props => {
 	);
 };
 
-export default SocialMedia;
+export default socialMedia;

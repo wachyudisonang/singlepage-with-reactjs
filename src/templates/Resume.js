@@ -26,7 +26,7 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import Icon from '../components/Icon';
-import '../resources/fonts/style.css';
+import '../resources/icomoon/style.css';
 
 class Resume extends Component {
 	constructor(props) {
@@ -49,14 +49,14 @@ class Resume extends Component {
 		return (
 			<div className={classnames('App', className)} {...props}>
 				<Navbar tag="header" fixed="top" expand="lg" dark id="mainNav">
-					<div class="container">
-						<Link to='/' class="navbar-brand">React Resume <img src={logo} className="App-logo" alt="logo" /></Link>
+					<div className="container">
+						<Link to='/' className="navbar-brand">React Resume <img src={logo} className="App-logo" alt="logo" /></Link>
 						<NavbarToggler right onClick={this.toggle} />
 						<Collapse id="navbarResponsive" isOpen={this.state.collapsed} navbar>
 							<Nav className="ml-auto" navbar>
-								<li class="nav-item"><Link to='/portfolio' class="nav-link">Portfolio</Link></li>
-								<li class="nav-item"><Link to='/about' class="nav-link">About</Link></li>
-								<li class="nav-item"><Link to='/contact' class="nav-link">Contact</Link></li>
+								<li className="nav-item"><Link to='/portfolio' className="nav-link">Portfolio</Link></li>
+								<li className="nav-item"><Link to='/about' className="nav-link">About</Link></li>
+								<li className="nav-item"><Link to='/contact' className="nav-link">Contact</Link></li>
 							</Nav>
 						</Collapse>
 					</div>

@@ -5,6 +5,7 @@ import {
 	Row,
 	Col,
 } from 'reactstrap';
+import {basics} from '../../resume.json'
 
 const Home = () => (
 	<div id="home">
@@ -15,7 +16,7 @@ const Home = () => (
 					<div class="intro-text">
 						<span class="name">My React Resume</span>
 						<hr class="star-light" />
-						<span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+						<span class="skills">{basics.label}</span>
 					</div>
 				</Col>
 			</Row>
