@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.0.0-beta.2",
     "classnames": "^2.2.5",
     "react": "^16.0.0",
