@@ -3,7 +3,7 @@ import {
 	Container
 } from 'reactstrap';
 import {projects} from '../../resources/resume.json'
-import ButtonModal from "../../components/buttonModal"
+import PortfolioEntry from "../../components/PortfolioEntry"
 
 class Portfolio extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class Portfolio extends React.Component {
 				<Container>
 					<h2 className="text-center">Portfolio</h2>
 					<hr className="star-primary" />
-						<ButtonModal sections={projects} />
+						<PortfolioEntry sections={projects} />
 				</Container>
 			</section>
     );

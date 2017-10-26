@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './img/profile.png';
+import logo from '../../resources/img/profile.png';
 import {
 	Container,
 	Row,
