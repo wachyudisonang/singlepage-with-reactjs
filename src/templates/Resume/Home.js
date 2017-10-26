@@ -5,7 +5,7 @@ import {
 	Row,
 	Col,
 } from 'reactstrap';
-import {basics} from '../../resume.json'
+import {basics} from '../../resources/resume.json'
 
 const Home = () => (
 	<div id="home">

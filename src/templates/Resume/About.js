@@ -1,5 +1,5 @@
 import React from 'react'
-import {basics} from '../../resume.json'
+import {basics} from '../../resources/resume.json'
 
 // const paragraph = (content) => (
 // 	<p>{content}</p>

@@ -2,7 +2,7 @@ import React from 'react'
 import {
 	Container
 } from 'reactstrap';
-import {projects} from '../../resume.json'
+import {projects} from '../../resources/resume.json'
 import ButtonModal from "../../components/buttonModal"
 
 class Portfolio extends React.Component {
