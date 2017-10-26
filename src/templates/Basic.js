@@ -3,21 +3,14 @@ import './style.css';
 import './Resume/resume.css';
 import logo from './logo.svg';
 import Main from './Basic/Main'
-import Home from './Basic/Home'
-import Schedule from './Basic/Schedule'
 import {
-	Collapse,
 	Navbar,
 	NavbarToggler,
 	NavbarBrand,
-	Nav,
-	NavItem,
-	NavLink,
 	Container,
 	Row,
 	Col,
-	Jumbotron,
-	Button
+	Jumbotron
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
 

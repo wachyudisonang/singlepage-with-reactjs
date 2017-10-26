@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
+import React from 'react';
 
 function mapIcon(socialMedia) {
-		const media = socialMedia.replace(/ /g, '-');
-		switch (socialMedia) {
-			case 'email':
-				return (
-						<i className={'icon-envelope'}/>
-				);
-			default:
-				return (
-						<i className={`icon-${media}`}/>
-				);
-		}
+	const media = socialMedia.replace(/ /g, '-');
+	switch (socialMedia) {
+		case 'email':
+			return (
+					<i className={'icon-envelope'}/>
+			);
+		default:
+			return (
+					<i className={`icon-${media}`}/>
+			);
+	}
 }
 
 const socialMedia = props => {

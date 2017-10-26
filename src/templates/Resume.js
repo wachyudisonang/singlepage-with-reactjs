@@ -1,31 +1,17 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import PropTypes from 'prop-types';
 import './style.css';
 import './Resume/resume.css';
 import logo from './logo.svg';
 import Main from './Resume/Main'
-import Home from './Resume/Home'
 import Footer from './Resume/Footer'
-import Portfolio from './Resume/Portfolio'
-import About from './Resume/About'
-import Contact from './Resume/Contact'
 import {
 	Collapse,
 	Navbar,
 	NavbarToggler,
-	NavbarBrand,
-	Nav,
-	NavItem,
-	NavLink,
-	Container,
-	Row,
-	Col,
-	Jumbotron,
-	Button
+	Nav
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
-import Icon from '../components/Icon';
 import '../resources/icomoon/style.css';
 
 class Resume extends Component {

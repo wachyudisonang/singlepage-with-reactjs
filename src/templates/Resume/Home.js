@@ -13,10 +13,10 @@ const Home = () => (
 			<Row className="align-items-center">
 				<Col className="col-12">
 					<img src={logo} className="img-fluid" alt="" />
-					<div class="intro-text">
-						<span class="name">My React Resume</span>
-						<hr class="star-light" />
-						<span class="skills">{basics.label}</span>
+					<div className="intro-text">
+						<span className="name">My React Resume</span>
+						<hr className="star-light" />
+						<span className="skills">{basics.label}</span>
 					</div>
 				</Col>
 			</Row>
