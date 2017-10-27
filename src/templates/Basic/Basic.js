@@ -1,8 +1,6 @@
 import React from 'react'
-import './style.css';
-import './Resume/resume.css';
-import logo from './logo.svg';
-import Main from './Basic/Main'
+import logo from '../../resources/img/logo.svg';
+import Main from './Main'
 import {
 	Navbar,
 	NavbarToggler,

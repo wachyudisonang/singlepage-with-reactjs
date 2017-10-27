@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import './style.css';
-import './Resume/resume.css';
-import logo from './logo.svg';
-import Main from './Resume/Main'
-import Footer from './Resume/Footer'
+import './Resume.css';
+import logo from '../../resources/img/logo.svg';
+import Main from './Main'
+import Footer from './Footer'
 import {
 	Collapse,
 	Navbar,
@@ -12,7 +11,6 @@ import {
 	Nav
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
-import '../resources/icomoon/style.css';
 
 class Resume extends Component {
 	constructor(props) {
