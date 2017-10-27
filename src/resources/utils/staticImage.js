@@ -1,6 +1,6 @@
 const StaticImage = {
     use: function (img) {
-        const imageDir = require.context('../img/', false, /\.(png|jpe?g|svg)$/);
+        const imageDir = require.context('../img/', false, /\.(png|gif|jpe?g|svg)$/);
 
         const applyFunc = function (array) {
             let images = {};

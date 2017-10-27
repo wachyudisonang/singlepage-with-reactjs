@@ -38,7 +38,7 @@ class Entry extends React.Component {
 							<p hidden>{this.props.project.summary}</p>
 						</div>
 					</div>
-					<img className="img-fluid" src={StaticImage.use(this.props.project.thumb+'.png')} alt="" />
+					<img className="img-fluid" src={StaticImage.use(this.props.project.thumb)} alt="" />
 				</a>
 				<PortfolioModal project={this.props.project} isOpen={this.state.modal} toggle={this.toggle} />
 			</div>
@@ -48,7 +48,7 @@ class Entry extends React.Component {
 
 class PortfolioEntry extends React.Component {
 	render() {
-		const portfolio = Random.shuffleArray(this.props.sections).slice(0, 8);
+		const portfolio = Random.shuffleArray(this.props.sections).slice(0, 9);
 		return (
 			<Row>
 				{portfolio

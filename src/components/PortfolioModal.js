@@ -8,7 +8,7 @@ class PortfolioModal extends React.Component {
 			<Modal isOpen={this.props.isOpen} toggle={this.props.toggle} className={this.props.className}>
 				<ModalHeader toggle={this.props.toggle}>{this.props.project.name}</ModalHeader>
 				<ModalBody>
-					<img className='img-fluid' src={StaticImage.use(this.props.project.thumb+'.png')} alt="" />
+					<img className='img-fluid' src={StaticImage.use(this.props.project.image)} alt="" />
 					<small className='clearfix'>{this.props.project.summary}</small>
 					<span className='categories'>
 							<i className='fa fa-tag'/>
