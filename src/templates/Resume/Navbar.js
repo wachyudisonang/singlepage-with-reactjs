@@ -35,7 +35,7 @@ class NavBar extends Component {
 			<Navbar id="mainNav" tag="header" fixed="top" expand="lg" dark>
 				<div className="container">
 					<Link to='/' className="navbar-brand">React Resume <img src={logo} className="App-logo" alt="logo" /></Link>
-					<NavbarToggler right onClick={this.toggle} />
+					<NavbarToggler onClick={this.toggle} />
 					<Collapse id="navbarResponsive" isOpen={this.state.collapsed} navbar>
 						<Nav className="ml-auto" navbar>
 							{menuList}

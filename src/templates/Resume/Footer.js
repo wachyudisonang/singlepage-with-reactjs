@@ -6,7 +6,7 @@ const Footer = () => (
 	<footer>
 		<div className='container'>
 				<div className='socials'>
-						<SocialMedia profiles={basics.profiles}/>
+						<SocialMedia profiles={basics.profiles} listType="inline" />
 				</div>
 				<div id='go-top'>
 						<a className='smoothscroll' title='Back to Top' href='#home'>

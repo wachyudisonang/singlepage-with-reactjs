@@ -1,22 +1,24 @@
 import React from 'react';
 
 function mapIcon(socialMedia) {
-	const media = socialMedia.replace(/ /g, '-');
-	switch (socialMedia) {
-		case 'email':
-			return (
-					<i className={'icon-envelope'}/>
-			);
+	let media = socialMedia.replace(/ /g, '-');
+	return (
+		<i className={'icon-'+media}/>
+	);
+}
+
+function printClass(string) {
+	switch (string) {
+		case 'inline':
+			return 'navbar-nav flex-row';
 		default:
-			return (
-					<i className={`icon-${media}`}/>
-			);
+			return '';
 	}
 }
 
-const socialMedia = props => {
+const socialMedia = (props) => {
 	return (
-		<ul className="navbar-nav flex-row">
+		<ul className={printClass(props.listType)}>
 			{props.profiles
 				.filter(function (profile, index) {
 					return !profile.hide
@@ -24,8 +26,8 @@ const socialMedia = props => {
 				.map(function (profile, index) {
 				const getIcon = mapIcon(profile.icon.toLowerCase());
 				return (
-					<li className="nav-item" key={index}>
-						<a href={profile.url} className="nav-link p-2" target="_blank">
+					<li key={index}>
+						<a href={profile.url} target="_blank">
 							 {getIcon}
 						</a>
 					</li>

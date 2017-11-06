@@ -2,15 +2,16 @@ import React from 'react';
 import Navbar from './Navbar';
 import Main from './Main';
 import Footer from './Footer';
+import BodyAttribute from '../../components/BodyAttribute';
 import './Resume.scss';
 import './Resume.css';
 
 const Resume = () => (
-	<div className='App'>
+	<BodyAttribute classAttr="resume">
 		<Navbar />
 		<Main />
 		<Footer />
-	</div>
+	</BodyAttribute>
 );
 
 export default Resume;
