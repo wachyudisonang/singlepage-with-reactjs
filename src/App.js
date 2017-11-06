@@ -1,11 +1,10 @@
-// src/components/App.js
 import React, { Component } from 'react';
+import Resume from './templates/Resume/Resume'
 import 'babel-polyfill'
-import 'bootstrap/dist/css/bootstrap.css';
+import './App.scss';
 import './App.css';
 import './resources/icomoon/style.css';
-import Resume from './templates/Resume/Resume'
-import Basic from './templates/Basic/Basic'
+import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
 	render() {

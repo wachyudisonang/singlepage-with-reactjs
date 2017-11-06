@@ -1,11 +1,14 @@
-// src/index.js
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
-render((
+const stringProps = JSON.stringify(this.props);
+
+const body = (
 	<BrowserRouter>
-		<App />
+		<App blablab={stringProps} />
 	</BrowserRouter>
-), document.getElementById('root'));
+);
+
+ReactDOM.render(body, document.getElementById('root'));

@@ -1,5 +1,5 @@
 import React from 'react'
-import {basics} from '../../resources/resume.json'
+import { basics } from '../../resources/resume.json'
 import SocialMedia from "../../components/socialMedia"
 
 const Footer = () => (
