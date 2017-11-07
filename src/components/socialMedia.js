@@ -16,7 +16,7 @@ function printClass(string) {
 	}
 }
 
-const socialMedia = (props) => {
+const SocialMedia = (props) => {
 	return (
 		<ul className={printClass(props.listType)}>
 			{props.profiles
@@ -37,4 +37,4 @@ const socialMedia = (props) => {
 	);
 };
 
-export default socialMedia;
+export default SocialMedia;

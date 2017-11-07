@@ -4,7 +4,7 @@ const StaticImage = {
 
         const applyFunc = function (array) {
             let images = {};
-            array.keys().map((item, index) => { images[item.replace('./', '')] = array(item); });
+            array.keys().forEach((item, index) => { images[item.replace('./', '')] = array(item); });
             return images;
         }
 

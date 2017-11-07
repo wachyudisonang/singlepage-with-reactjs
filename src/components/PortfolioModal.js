@@ -24,7 +24,6 @@ class PortfolioModal extends React.Component {
 						Details
 					</a>
 					<a
-						href='javascript:void(0)'
 						className='btn btn-secondary'
 						onClick={this.props.toggle}>
 						Close

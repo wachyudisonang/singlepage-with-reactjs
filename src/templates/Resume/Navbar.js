@@ -8,7 +8,7 @@ import {
 	Nav
 } from 'reactstrap';
 
-const menus = ['portfolio', 'about', 'contact'];
+const menus = ['about', 'portfolio', 'contact'];
 
 const menuList = menus.map((menu, i) =>
 	<li key={'menu_' + i} className="nav-item"><Link to={'/' + menu} className="nav-link">{menu}</Link></li>

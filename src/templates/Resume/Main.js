@@ -14,8 +14,8 @@ const Main = () => (
 	<main id="content" className="bd-masthead" role="main">
 		<Switch>
 			<Route exact path='/' component={Home}/>
-			<Route path='/portfolio' component={Portfolio}/>
 			<Route path='/about' component={About}/>
+			<Route path='/portfolio' component={Portfolio}/>
 			<Route path='/contact' component={Contact}/>
 		</Switch>
 	</main>

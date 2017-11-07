@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import {
 	Row
 } from 'reactstrap'
@@ -6,7 +6,7 @@ import PortfolioModal from './PortfolioModal'
 import StaticImage from '../resources/utils/staticImage'
 import Random from '../resources/utils/random'
 
-class Entry extends React.Component {
+class Entry extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -46,7 +46,7 @@ class Entry extends React.Component {
 	}
 }
 
-class PortfolioEntry extends React.Component {
+class PortfolioEntry extends Component {
 	render() {
 		const portfolio = Random.shuffleArray(this.props.sections).slice(0, 9);
 		return (
